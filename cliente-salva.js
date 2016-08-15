@@ -1,7 +1,6 @@
-	var produto = {
-		titulo: 'cliente-salva',
-		preco: 99,
-		descricao : 'bla bkla bla'
+	var estatistica = {
+		nome: 'cliente-salva',
+		duracao: 99999
 	}
 
 	var http = require('http');
@@ -9,7 +8,7 @@
 	var config = {
 		hostname:'localhost',
 		port:3000,
-		path:'/produtos/salva',
+		path:'/estatisticas/salva',
 		method : 'post',
 		headers:{
 			Accept:'application/json',
