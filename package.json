@@ -1,0 +1,22 @@
+{
+  "name": "motfWS-intranet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "express-load": "^1.1.15",
+    "express-validator": "^2.20.8",
+    "mocha": "^2.5.3",
+    "mongoose": "^4.5.8",
+    "mysql": "^2.11.1",
+    "supertest": "^1.2.0"
+  }
+}
