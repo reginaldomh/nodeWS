@@ -15,7 +15,7 @@ module.exports = function (){
 	app.use(bodyParser.urlencoded({extended : true}));
 	app.use(expressValidator());
 	
-	load('routes',{'cwd':'app'}).then('infra').into(app);
+	load('routes',{'cwd':'app'}).then('dao').into(app);
 
 	return app;
 }

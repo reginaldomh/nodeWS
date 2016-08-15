@@ -2,8 +2,7 @@
 module.exports = function(app) {
 	
 	app.get('/estatisticas', function (req,res,next){
-		console.log("aqui");
-		var estatisticaDAO = new app.infra.EstatisticaDAO();
+		var estatisticaDAO = new app.dao.EstatisticaDAO();
 
 		estatisticaDAO.lista(function(error, result ){
 
@@ -29,7 +28,7 @@ module.exports = function(app) {
 	app.post('/estatisticas/salva', function (req,res,next){
 		var estatistica = req.body;
 
-		var estatisticaDAO = new app.infra.EstatisticaDAO();
+		var estatisticaDAO = new app.dao.EstatisticaDAO();
 		if(Array.isArray(estatistica)){
 
 			estatisticaDAO.salvaTodos(estatistica,function(err){
